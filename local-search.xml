@@ -16,5 +16,24 @@
   
   
   
+  <entry>
+    <title>Mapping</title>
+    <link href="/2023/10/11/Mapping/"/>
+    <url>/2023/10/11/Mapping/</url>
+    
+    <content type="html"><![CDATA[<p><strong>Mapping</strong>:A mapping, or map, is a rule that assigns to each element of one set, called the domain, an element of another set, called the codomain.</p><p><strong>Partial Mapping</strong>:A partial mapping is a mapping where some elements of the domain may not be assigned to any element in the codomain.</p><p><strong>Total Mapping</strong>:A total mapping is a mapping where every element of the domain is assigned to exactly one element in the codemain.</p><p><strong>Inverse Mapping</strong>:If there is a mapping $f$ from setA to setB,then its inverse mapping<br>$f^{-1}$ is a mapping from setB back to setA.The inverse mapping exists if and only if the original mapping $f$ is bijective,meaning it is both injective(one-to-one) and surjective(onto),For a bijective mapping $f$ ,its inverse $f^{-1}$ is also bijective,and for every element $y$ in B,there exists a unique element $x$ in A such that $f(x)&#x3D;y$ and $f^{-1}(y)&#x3D;x$ </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Math_Note</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
   
 </search>
