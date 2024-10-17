@@ -19,15 +19,15 @@
   <meta name="author" content="Yumiera">
   <meta name="keywords" content="">
   
-    <meta name="description" content="(gdb) set disassembly-flavor intel 加入到&#x2F;.gdbinit xor eax,eax : ebx&#x3D;0 lea rax,[rbp-0x18] : lea(Load Effective Address),现在一般用来计算rax&#x3D;rbp-0x18 cmp al,0x61 : al-0x61 BYTE WORD DWORD QWORD : 8 16 32 64 x&#x2F;20i">
+    <meta name="description" content="(gdb) set disassembly-flavor intel 加入到&#x2F;.gdbinit xor eax,eax : ebx&#x3D;0 lea rax,[rbp-0x18] : lea(Load Effective Address),现在一般用来计算rax&#x3D;rbp-0x18 cmp al,0x61 : al-0x61 test eax,eax  : eax&amp;eax BYTE WORD DW">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Assembly汇编笔记">
 <meta property="og:url" content="http://yumiera.github.io/Assembly-Learning/index.html">
 <meta property="og:site_name" content="Yum1era&#39;s Blog">
-<meta property="og:description" content="(gdb) set disassembly-flavor intel 加入到&#x2F;.gdbinit xor eax,eax : ebx&#x3D;0 lea rax,[rbp-0x18] : lea(Load Effective Address),现在一般用来计算rax&#x3D;rbp-0x18 cmp al,0x61 : al-0x61 BYTE WORD DWORD QWORD : 8 16 32 64 x&#x2F;20i">
+<meta property="og:description" content="(gdb) set disassembly-flavor intel 加入到&#x2F;.gdbinit xor eax,eax : ebx&#x3D;0 lea rax,[rbp-0x18] : lea(Load Effective Address),现在一般用来计算rax&#x3D;rbp-0x18 cmp al,0x61 : al-0x61 test eax,eax  : eax&amp;eax BYTE WORD DW">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-10-13T08:42:07.000Z">
-<meta property="article:modified_time" content="2024-10-13T14:00:20.871Z">
+<meta property="article:modified_time" content="2024-10-14T10:21:46.943Z">
 <meta property="article:author" content="Yumiera">
 <meta property="article:tag" content="Assembly">
 <meta name="twitter:card" content="summary_large_image">
@@ -227,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          31 字
+          35 字
         
       </span>
     
@@ -284,6 +284,7 @@
 <p><code>xor eax,eax</code> : <code>ebx=0</code></p>
 <p><code>lea rax,[rbp-0x18]</code> : lea(Load Effective Address),现在一般用来计算<code>rax=rbp-0x18</code></p>
 <p><code>cmp al,0x61</code> : <code>al-0x61</code></p>
+<p><code>test eax,eax</code>  : eax&amp;eax</p>
 <p><code>BYTE WORD DWORD QWORD</code> : 8 16 32 64</p>
 <p><code>x/20i $rip</code></p>
 
@@ -375,6 +376,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/%E7%AE%97%E6%B3%95%E7%9A%84%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90/" title="算法的性能分析">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">算法的性能分析</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
