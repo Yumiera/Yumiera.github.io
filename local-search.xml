@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>冒泡排序</title>
+    <link href="/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
+    <url>/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</url>
+    
+    <content type="html"><![CDATA[<p>冒泡排序（Bubble Sort）是一种简单的排序算法，它通过重复遍历待排序的列表，比较相邻元素并根据需要交换它们的位置来工作。这个过程会将每一趟遍历中最大的未排序元素像气泡一样“浮”到列表的末尾。以下是冒泡排序的基本步骤：</p><p>​1.比较相邻的元素。如果第一个比第二个大（升序排列），就交换它们两个。</p><p>​2.对每一对相邻元素做同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。</p><p>​3.针对所有的元素重复上述的步骤，除了最后一个。</p><p>​4.重复步骤1-3，直到没有任何一对数字需要比较。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">bubble_sort</span><span class="hljs-params">(<span class="hljs-type">int</span> arr[], <span class="hljs-type">int</span> n)</span> </span>&#123;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n - <span class="hljs-number">1</span>; i++) &#123; <span class="hljs-comment">//外层循环控制遍历次数</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt; n - i - <span class="hljs-number">1</span>; j++) &#123; <span class="hljs-comment">//内层循环进行相邻元素比较</span><br>            <span class="hljs-keyword">if</span> (arr[j] &gt; arr[j + <span class="hljs-number">1</span>]) &#123; <span class="hljs-comment">//比较</span><br>               <span class="hljs-built_in">swap</span>(arr[j],arr[j<span class="hljs-number">+1</span>]); <span class="hljs-comment">//交换</span><br>                <span class="hljs-comment">//int temp = arr[j+1];</span><br>                <span class="hljs-comment">//arr[j+1] =arr[j];</span><br>                <span class="hljs-comment">//arr[j]=temp;</span><br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>Algorithm</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Algorithm</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>约瑟夫问题</title>
     <link href="/%E7%BA%A6%E7%91%9F%E5%A4%AB%E9%97%AE%E9%A2%98/"/>
     <url>/%E7%BA%A6%E7%91%9F%E5%A4%AB%E9%97%AE%E9%A2%98/</url>
