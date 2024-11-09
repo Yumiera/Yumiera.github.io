@@ -19,21 +19,32 @@
   <meta name="author" content="Yumiera">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http://yumiera.github.io/categories/index.html">
+    <meta name="description" content="懒是原罪，用python读取excel的数据并绘制频谱图">
+<meta property="og:type" content="article">
+<meta property="og:title" content="频谱图绘制">
+<meta property="og:url" content="http://yumiera.github.io/%E9%A2%91%E8%B0%B1%E5%9B%BE%E7%BB%98%E5%88%B6/index.html">
 <meta property="og:site_name" content="Yum1era&#39;s Blog">
+<meta property="og:description" content="懒是原罪，用python读取excel的数据并绘制频谱图">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-11-08T12:23:14.000Z">
+<meta property="article:modified_time" content="2024-11-08T16:55:23.987Z">
 <meta property="article:author" content="Yumiera">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>分类 - Yum1era&#39;s Blog</title>
+  <title>频谱图绘制 - Yum1era&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -87,7 +98,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 60vh;">
+<div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -193,9 +204,49 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="分类"></span>
+            <span id="subtitle" data-typed-text="频谱图绘制"></span>
           
         </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-11-08 20:23" pubdate>
+          2024年11月8日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          93 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          1 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
 
         
       </div>
@@ -211,285 +262,184 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">频谱图绘制</h1>
+            
+            
+              <div class="markdown-body">
                 
+                <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> panda <span class="hljs-keyword">as</span> pd<br><span class="hljs-keyword">import</span> matplotlib.pyplog <span class="hljs-keyword">as</span> plt<br><br><span class="hljs-comment">#读取excel文件并且跳过第一行标题</span><br>file_path = <span class="hljs-string">&#x27;data.xls&#x27;</span><br>df = pd.read_excel(file_path , header = <span class="hljs-number">0</span>) <span class="hljs-comment">#header = 0 表示第一行是标题</span><br><br>frequency = df[<span class="hljs-string">&#x27;Frequency(Hz)&#x27;</span>] <span class="hljs-comment">#频率</span><br>amplitude = df[<span class="hljs-string">&#x27;Absolute Amplitude(a.u.)&#x27;</span>] <span class="hljs-comment">#绝对振幅</span><br><br><span class="hljs-comment">#绘制频谱图</span><br>plt.figure(figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">6</span>))<br>plt.plot(frequency,amplitude)<br>plt.title(<span class="hljs-string">&#x27;Spectrum&#x27;</span>)<br>plt.xlable(<span class="hljs-string">&#x27;Frequency(Hz)&#x27;</span>)<br>plt.ylable(<span class="hljs-string">&#x27;Absolute Amplitude(a.u.)&#x27;</span>)<br>plt.grid(<span class="hljs-literal">True</span>) <span class="hljs-comment">#网格</span><br>plt.show()<br></code></pre></td></tr></table></figure>
 
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
 
-
-
-
-<div class="category-list">
+<span class="category-chains">
   
   
     
-    
-    
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Algorithm"
-        id="heading-4afa80e77a07f7488ce4d1bdd8c4977a" role="tab" data-toggle="collapse" href="#collapse-4afa80e77a07f7488ce4d1bdd8c4977a"
-        aria-expanded="false"
-      >
-        Algorithm
-        <span class="list-group-count"></span>
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      
-        <a href="/categories/Algorithm/" class="category-count col-2 col-md-1 col-xm-1">
-          <i class="iconfont icon-articles"></i>
-          <span>5</span>
-        </a>
-      
-      <div class="category-collapse collapse " id="collapse-4afa80e77a07f7488ce4d1bdd8c4977a"
-           role="tabpanel" aria-labelledby="heading-4afa80e77a07f7488ce4d1bdd8c4977a">
+      <span class="category-chain">
         
-        
-          
-  <div class="category-post-list">
-    
-    
-      
-      
-        <a href="/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E9%97%AE%E9%A2%98/" title="动态规划问题"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">动态规划问题</span>
-        </a>
-      
-    
-      
-      
-        <a href="/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" title="冒泡排序"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">冒泡排序</span>
-        </a>
-      
-    
-      
-      
-        <a href="/%E7%BA%A6%E7%91%9F%E5%A4%AB%E9%97%AE%E9%A2%98/" title="约瑟夫问题"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">约瑟夫问题</span>
-        </a>
-      
-    
-      
-      
-        <a href="/%E9%AB%98%E7%B2%BE%E5%BA%A6%E7%AE%97%E6%B3%95/" title="高精度算法"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">高精度算法</span>
-        </a>
-      
-    
-      
-      
-        <a href="/%E7%AE%97%E6%B3%95%E7%9A%84%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90/" title="算法的性能分析"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">算法的性能分析</span>
-        </a>
-      
-    
-  </div>
+  <a href="/categories/%E6%9C%89%E8%B6%A3%E7%9A%84/" class="category-chain-item">有趣的</a>
+  
+  
 
-        
-      </div>
+      </span>
+    
+  
+</span>
+
     </div>
   
-    
-    
-    
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Math_Note"
-        id="heading-e8a04445c7c2f3a4b93cad1f810255a8" role="tab" data-toggle="collapse" href="#collapse-e8a04445c7c2f3a4b93cad1f810255a8"
-        aria-expanded="false"
-      >
-        Math_Note
-        <span class="list-group-count"></span>
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      
-        <a href="/categories/Math-Note/" class="category-count col-2 col-md-1 col-xm-1">
-          <i class="iconfont icon-articles"></i>
-          <span>2</span>
-        </a>
-      
-      <div class="category-collapse collapse " id="collapse-e8a04445c7c2f3a4b93cad1f810255a8"
-           role="tabpanel" aria-labelledby="heading-e8a04445c7c2f3a4b93cad1f810255a8">
-        
-        
-          
-  <div class="category-post-list">
-    
-    
-      
-      
-        <a href="/Function/" title="Function"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">Function</span>
-        </a>
-      
-    
-      
-      
-        <a href="/Mapping/" title="Mapping"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">Mapping</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
   
-    
-    
-    
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Assembly"
-        id="heading-d75c45e11c8aeb13494dba59a388a164" role="tab" data-toggle="collapse" href="#collapse-d75c45e11c8aeb13494dba59a388a164"
-        aria-expanded="false"
-      >
-        Assembly
-        <span class="list-group-count"></span>
-        <i class="iconfont icon-arrowright"></i>
-      </a>
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
       
-        <a href="/categories/Assembly/" class="category-count col-2 col-md-1 col-xm-1">
-          <i class="iconfont icon-articles"></i>
-          <span>1</span>
-        </a>
+        <a href="/tags/python/" class="print-no-link">#python</a>
       
-      <div class="category-collapse collapse " id="collapse-d75c45e11c8aeb13494dba59a388a164"
-           role="tabpanel" aria-labelledby="heading-d75c45e11c8aeb13494dba59a388a164">
-        
-        
-          
-  <div class="category-post-list">
-    
-    
-      
-      
-        <a href="/Assembly-Learning/" title="Assembly汇编笔记"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">Assembly汇编笔记</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Write_UP"
-        id="heading-48537cad3ae073a2f6f8f9955f39e873" role="tab" data-toggle="collapse" href="#collapse-48537cad3ae073a2f6f8f9955f39e873"
-        aria-expanded="false"
-      >
-        Write_UP
-        <span class="list-group-count"></span>
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      
-        <a href="/categories/Write-UP/" class="category-count col-2 col-md-1 col-xm-1">
-          <i class="iconfont icon-articles"></i>
-          <span>1</span>
-        </a>
-      
-      <div class="category-collapse collapse " id="collapse-48537cad3ae073a2f6f8f9955f39e873"
-           role="tabpanel" aria-labelledby="heading-48537cad3ae073a2f6f8f9955f39e873">
-        
-        
-          
-  <div class="category-post-list">
-    
-    
-      
-      
-        <a href="/Moectf2024/" title="Moectf2024"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">Moectf2024</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="有趣的"
-        id="heading-77b9c8bd4daa15442f28c2b987d6dee0" role="tab" data-toggle="collapse" href="#collapse-77b9c8bd4daa15442f28c2b987d6dee0"
-        aria-expanded="false"
-      >
-        有趣的
-        <span class="list-group-count"></span>
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      
-        <a href="/categories/%E6%9C%89%E8%B6%A3%E7%9A%84/" class="category-count col-2 col-md-1 col-xm-1">
-          <i class="iconfont icon-articles"></i>
-          <span>1</span>
-        </a>
-      
-      <div class="category-collapse collapse " id="collapse-77b9c8bd4daa15442f28c2b987d6dee0"
-           role="tabpanel" aria-labelledby="heading-77b9c8bd4daa15442f28c2b987d6dee0">
-        
-        
-          
-  <div class="category-post-list">
-    
-    
-      
-      
-        <a href="/%E9%A2%91%E8%B0%B1%E5%9B%BE%E7%BB%98%E5%88%B6/" title="频谱图绘制"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">频谱图绘制</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
     </div>
   
 </div>
 
 
-              </div>
-            </div>
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>频谱图绘制</div>
+      <div>http://yumiera.github.io/频谱图绘制/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Yumiera</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年11月8日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
           </div>
         </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E9%97%AE%E9%A2%98/" title="动态规划问题">
+                        <span class="hidden-mobile">动态规划问题</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
       </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
     
 
     
@@ -582,6 +532,99 @@
 
 
 
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 
