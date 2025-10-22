@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yumiera.github.io/Polymorphism/</loc>
+    
+    <lastmod>2025-10-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yumiera.github.io/Moectf2024/</loc>
     
     <lastmod>2025-10-20</lastmod>
@@ -35,10 +44,24 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>http://yumiera.github.io/tags/Java/</loc>
+    <lastmod>2025-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
     <loc>http://yumiera.github.io/categories/Write-UP/</loc>
+    <lastmod>2025-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yumiera.github.io/categories/Java/</loc>
     <lastmod>2025-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
