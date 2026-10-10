@@ -3,21 +3,21 @@
 
   <url>
     <loc>https://yumiera.github.io/</loc>
-    <lastmod>2026-10-08T19:08:42+08:00</lastmod>
+    <lastmod>2026-10-08T19:08:33+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://yumiera.github.io/archives/</loc>
-    <lastmod>2026-10-08T19:08:42+08:00</lastmod>
+    <lastmod>2026-10-08T19:08:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://yumiera.github.io/tags/</loc>
-    <lastmod>2026-10-08T19:08:42+08:00</lastmod>
+    <lastmod>2026-10-08T19:08:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -31,7 +31,7 @@
 
   <url>
     <loc>https://yumiera.github.io/categories/</loc>
-    <lastmod>2026-10-08T19:08:42+08:00</lastmod>
+    <lastmod>2026-10-08T19:08:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -41,13 +41,6 @@
     <lastmod>2026-10-08T19:08:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://yumiera.github.io/posts/hello-world-2/</loc>
-    <lastmod>2026-10-08T19:08:42+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
