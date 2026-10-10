@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://yumiera.github.io/</loc>
+    <lastmod>2026-10-08T19:08:42+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://yumiera.github.io/archives/</loc>
+    <lastmod>2026-10-08T19:08:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://yumiera.github.io/tags/</loc>
+    <lastmod>2026-10-08T19:08:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://yumiera.github.io/tags/e6b58be8af9520e7a4bae4be8b/</loc>
+    <lastmod>2026-10-08T19:08:33+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://yumiera.github.io/categories/</loc>
+    <lastmod>2026-10-08T19:08:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://yumiera.github.io/categories/java/</loc>
+    <lastmod>2026-10-08T19:08:33+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://yumiera.github.io/posts/hello-world-2/</loc>
+    <lastmod>2026-10-08T19:08:42+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://yumiera.github.io/posts/hello-world/</loc>
+    <lastmod>2026-10-08T19:08:33+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://yumiera.github.io/posts/hello-world/a.png</image:loc></image:image>
+  </url>
+
+  <url>
+    <loc>https://yumiera.github.io/about/</loc>
+    <lastmod>2026-10-08T19:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
