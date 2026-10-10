@@ -206,8 +206,8 @@ html.dark{
         <p data-src-line="0">这是 Inkery 渲染管线的验收样例，覆盖代码高亮、公式、表格、任务列表、脚注、图片与摘要标记。</p>
 
 <h2 id="代码高亮" data-src-line="4">代码高亮</h2>
-<div class="code-block" data-lang="javascript" data-src-line="6"><div class="code-block-head"><span class="code-block-lang">javascript</span><button class="code-copy" type="button" aria-label="复制代码">复制</button></div><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> greet</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> `Hello, ${</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">name</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}!`</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">greet</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'Inkery'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">));</span></span>
+<div class="code-block" data-lang="javascript" data-src-line="6"><div class="code-block-head"><span class="code-block-lang">javascript</span><button class="code-copy" type="button" aria-label="复制代码">复制</button></div><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> greet</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">name</span><span style="--shiki-light:#E36209;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#E36209;--shiki-dark:#F97583">=></span><span style="--shiki-light:#E36209;--shiki-dark:#9ECBFF"> `Hello, ${</span><span style="--shiki-light:#E36209;--shiki-dark:#E1E4E8">name</span><span style="--shiki-light:#E36209;--shiki-dark:#9ECBFF">}!`</span><span style="--shiki-light:#E36209;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">console.</span><span style="--shiki-light:#24292E;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#B392F0">greet</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'Inkery'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">));</span></span>
 <span class="line"></span></code></pre></div>
 <div class="code-block" data-lang="bash" data-src-line="11"><div class="code-block-head"><span class="code-block-lang">bash</span><button class="code-copy" type="button" aria-label="复制代码">复制</button></div><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e" tabindex="0"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> run</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> blog</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> build</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> --clean</span></span>
 <span class="line"></span></code></pre></div>
@@ -259,6 +259,19 @@ html.dark{
       </div>
 
       <footer class="post-footer">
+        
+          <nav class="post-neighbours">
+            
+              <a class="neighbour neighbour-prev" href="/posts/moectf2024/">
+                <svg class="neighbour-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg>
+                <span class="neighbour-text">
+                  <span class="neighbour-label">上一篇</span>
+                  <span class="neighbour-title">Moectf2024</span>
+                </span>
+              </a>
+            
+            <span class="neighbour is-empty"></span>
+          </nav>
         
         <a class="back-home" href="/">返回首页<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6.5 18.5 12 13 17.5"/></svg></a>
       </footer>

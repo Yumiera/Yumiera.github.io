@@ -30,6 +30,13 @@
   </url>
 
   <url>
+    <loc>https://yumiera.github.io/tags/ctf/</loc>
+    <lastmod>2024-10-12T22:26:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://yumiera.github.io/categories/</loc>
     <lastmod>2026-10-08T19:08:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -44,11 +51,49 @@
   </url>
 
   <url>
+    <loc>https://yumiera.github.io/categories/write-up/</loc>
+    <lastmod>2024-10-12T22:26:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://yumiera.github.io/posts/blog-test/</loc>
     <lastmod>2026-10-08T19:08:33+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://yumiera.github.io/posts/blog-test/a.png</image:loc></image:image>
+  </url>
+
+  <url>
+    <loc>https://yumiera.github.io/posts/moectf2024/</loc>
+    <lastmod>2024-10-12T22:26:22+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/signin.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/signin2.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/haibao.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/ez_F5.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/ctfer2077.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/usbpcap.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/qrcode.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/prompt.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web1.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web2.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web3.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web4.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web5.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web6.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web7.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web8.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web9.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web10.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web11.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web12.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web13.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web14.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web15.png</image:loc></image:image>
+    <image:image><image:loc>https://yumiera.github.io/posts/moectf2024/web16.png</image:loc></image:image>
   </url>
 
   <url>
