@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 500" width="860" height="500" role="img" aria-label="连接决策状态图：解析首包后按代理配置分支，直连竞速与中转兜底，转发后按首字节判定成败">
+  <style>
+    .bg { fill: #f7f5f2; stroke: #e3ded6; stroke-width: 1; }
+    .n { fill: #ffffff; stroke: #c4bdb3; stroke-width: 1.1; }
+    .t { font: 500 13.5px/1.2 -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #2b2926; text-anchor: middle; }
+    .e { stroke: #948c81; stroke-width: 1.2; fill: none; }
+    .l { font: 400 11px/1.2 -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #6d675f; }
+    .m { text-anchor: middle; }
+    .s { fill: #514c46; }
+    .ring { fill: none; stroke: #514c46; stroke-width: 1.6; }
+  </style>
+
+  <rect class="bg" x="0.5" y="0.5" width="859" height="499" rx="12"/>
+
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#948c81"/>
+    </marker>
+  </defs>
+
+  <!-- 连线 -->
+  <path class="e" d="M430,38 L430,77" marker-end="url(#ar)"/>
+  <path class="e" d="M385,123 C355,160 300,170 250,192" marker-end="url(#ar)"/>
+  <path class="e" d="M475,123 C505,150 555,172 602,192" marker-end="url(#ar)"/>
+  <path class="e" d="M215,238 L215,307" marker-end="url(#ar)"/>
+  <path class="e" d="M262,238 C380,268 500,290 594,307" marker-end="url(#ar)"/>
+  <path class="e" d="M640,238 L640,307" marker-end="url(#ar)"/>
+  <path class="e" d="M600,238 C510,280 400,304 290,322" marker-end="url(#ar)"/>
+  <path class="e" d="M290,330 L565,330" marker-end="url(#ar)"/>
+  <path class="e" d="M640,353 L640,412" marker-end="url(#ar)"/>
+  <path class="e" d="M565,435 L215,435 L215,353" marker-end="url(#ar)"/>
+  <path class="e" d="M715,330 L799,330" marker-end="url(#ar)"/>
+
+  <!-- 起止状态 -->
+  <circle class="s" cx="430" cy="30" r="8"/>
+  <circle class="ring" cx="810" cy="330" r="11"/>
+  <circle class="s" cx="810" cy="330" r="5"/>
+
+  <!-- 状态节点 -->
+  <rect class="n" x="355" y="77" width="150" height="46" rx="10"/>
+  <text class="t" x="430" y="105">解析首包</text>
+
+  <rect class="n" x="140" y="192" width="150" height="46" rx="10"/>
+  <text class="t" x="215" y="220">外部代理</text>
+
+  <rect class="n" x="565" y="192" width="150" height="46" rx="10"/>
+  <text class="t" x="640" y="220">直连竞速</text>
+
+  <rect class="n" x="140" y="307" width="150" height="46" rx="10"/>
+  <text class="t" x="215" y="335">中转</text>
+
+  <rect class="n" x="565" y="307" width="150" height="46" rx="10"/>
+  <text class="t" x="640" y="335">转发</text>
+
+  <rect class="n" x="565" y="412" width="150" height="46" rx="10"/>
+  <text class="t" x="640" y="440">重拨</text>
+
+  <!-- 转移标签 -->
+  <text class="l" x="318" y="143" text-anchor="middle">配置了代理链</text>
+  <text class="l" x="546" y="143" text-anchor="middle">默认</text>
+  <text class="l" x="228" y="282">允许兜底</text>
+  <text class="l" x="652" y="284">任一路成功</text>
+  <text class="l" x="345" y="290" text-anchor="middle">全部失败/超时</text>
+  <text class="l m" x="427" y="320">写入首包后按 SNI/Host 建连</text>
+  <text class="l" x="652" y="388">建立成功但下行 0 字节</text>
+  <text class="l m" x="390" y="427">换代后重试</text>
+  <text class="l m" x="748" y="302">双向 EOF 或任一方向异常</text>
+</svg>
