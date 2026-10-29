@@ -3,21 +3,21 @@
 
   <url>
     <loc>https://yumiera.github.io/</loc>
-    <lastmod>2026-10-29T16:39:39+08:00</lastmod>
+    <lastmod>2026-10-29T17:38:05+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://yumiera.github.io/archives/</loc>
-    <lastmod>2026-10-29T16:39:39+08:00</lastmod>
+    <lastmod>2026-10-29T17:38:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://yumiera.github.io/tags/</loc>
-    <lastmod>2026-10-29T16:39:39+08:00</lastmod>
+    <lastmod>2026-10-29T17:38:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -31,14 +31,14 @@
 
   <url>
     <loc>https://yumiera.github.io/tags/e4bba3e79086e58d8fe8aeae/</loc>
-    <lastmod>2026-10-29T16:39:39+08:00</lastmod>
+    <lastmod>2026-10-29T17:38:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://yumiera.github.io/tags/e6b581e9878fe4bcaae8a385/</loc>
-    <lastmod>2026-10-29T16:39:39+08:00</lastmod>
+    <lastmod>2026-10-29T17:38:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -52,35 +52,35 @@
 
   <url>
     <loc>https://yumiera.github.io/tags/http/</loc>
-    <lastmod>2026-10-29T16:39:39+08:00</lastmod>
+    <lastmod>2026-10-29T17:38:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://yumiera.github.io/tags/websocket/</loc>
-    <lastmod>2026-10-29T16:39:39+08:00</lastmod>
+    <lastmod>2026-10-29T17:38:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://yumiera.github.io/categories/</loc>
-    <lastmod>2026-10-29T16:39:39+08:00</lastmod>
+    <lastmod>2026-10-29T17:38:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://yumiera.github.io/categories/e68a80e69cafe68b86e8a7a3e4b88ee58886e4baab/</loc>
-    <lastmod>2026-10-29T16:39:39+08:00</lastmod>
+    <lastmod>2026-10-29T17:38:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://yumiera.github.io/categories/e7bd91e7bb9ce58d8fe8aeae/</loc>
-    <lastmod>2026-10-29T16:39:39+08:00</lastmod>
+    <lastmod>2026-10-29T17:38:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -101,7 +101,7 @@
 
   <url>
     <loc>https://yumiera.github.io/posts/http-tunneling/</loc>
-    <lastmod>2026-10-29T16:39:39+08:00</lastmod>
+    <lastmod>2026-10-29T17:38:05+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://yumiera.github.io/posts/http-tunneling/decision-flow.svg</image:loc></image:image>

@@ -5,7 +5,7 @@
     <link>https://yumiera.github.io/</link>
     <description>Stay hungry, stay foolish. 记录学习路上的技术笔记与思考。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 29 Oct 2026 16:39:39 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 17:38:05 +0800</lastBuildDate>
     <generator>Inkery</generator>
     <atom:link href="https://yumiera.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 
@@ -14,7 +14,7 @@
       <link>https://yumiera.github.io/posts/http-tunneling/</link>
       <guid isPermaLink="true">https://yumiera.github.io/posts/http-tunneling/</guid>
       <pubDate>Thu, 29 Oct 2026 16:39:39 +0800</pubDate>
-      <atom:updated>2026-10-29T16:39:39+08:00</atom:updated>
+      <atom:updated>2026-10-29T17:38:05+08:00</atom:updated>
       <category>网络协议</category>
       <category>技术拆解与分享</category>
       <category>HTTP隧道</category>
