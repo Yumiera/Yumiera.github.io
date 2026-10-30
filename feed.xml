@@ -5,7 +5,7 @@
     <link>https://yumiera.github.io/</link>
     <description>Stay hungry, stay foolish. 记录学习路上的技术笔记与思考。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 29 Oct 2026 17:38:05 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 08:34:44 +0800</lastBuildDate>
     <generator>Inkery</generator>
     <atom:link href="https://yumiera.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 
@@ -14,7 +14,7 @@
       <link>https://yumiera.github.io/posts/http-tunneling/</link>
       <guid isPermaLink="true">https://yumiera.github.io/posts/http-tunneling/</guid>
       <pubDate>Thu, 29 Oct 2026 16:39:39 +0800</pubDate>
-      <atom:updated>2026-10-29T17:38:05+08:00</atom:updated>
+      <atom:updated>2026-10-30T08:34:44+08:00</atom:updated>
       <category>网络协议</category>
       <category>技术拆解与分享</category>
       <category>HTTP隧道</category>
@@ -22,7 +22,7 @@
       <category>WebSocket</category>
       <category>流量伪装</category>
       <description><![CDATA[代理协议要解决的是&#34;怎么把目标地址交给中转方&#34;，HTTP 隧道要解决的是&#34;怎么把 TCP 塞进请求体&#34;。两件事拼起来，代理就能跑在不给 socket 的边缘节点上。]]></description>
-      <content:encoded><![CDATA[&lt;h1 id=&#34;http-tcp-http&#34; data-src-line=&#34;0&#34;&gt;HTTP 隧道：把 TCP 封装成 HTTP 双向流&lt;/h1&gt;
+      <content:encoded><![CDATA[&lt;h2 id=&#34;http-tcp-http&#34; data-src-line=&#34;0&#34;&gt;HTTP 隧道：把 TCP 封装成 HTTP 双向流&lt;/h2&gt;
 &lt;blockquote data-src-line=&#34;2&#34;&gt;
 &lt;p data-src-line=&#34;2&#34;&gt;HTTP 隧道不是新概念，CONNECT 已经用了二十多年。这篇讲它的完整形态：地址信封怎么设计、TCP 怎么塞进请求体、以及为什么能跑在不给 socket 的 CDN 上。&lt;/p&gt;
 &lt;/blockquote&gt;

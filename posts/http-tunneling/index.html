@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="Yumiera&#39;s Blog">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-10-29T16:39:39+08:00">
-<meta property="article:modified_time" content="2026-10-29T17:38:05+08:00">
+<meta property="article:modified_time" content="2026-10-30T08:34:44+08:00">
 <meta property="article:section" content="网络协议">
 <meta property="article:section" content="技术拆解与分享">
 <meta property="article:tag" content="HTTP隧道">
@@ -29,7 +29,7 @@
 <meta name="twitter:title" content="HTTP Tunneling | Yumiera&#39;s Blog">
 <meta name="twitter:description" content="代理协议要解决的是&#34;怎么把目标地址交给中转方&#34;，HTTP 隧道要解决的是&#34;怎么把 TCP 塞进请求体&#34;。两件事拼起来，代理就能跑在不给 socket 的边缘节点上。">
 <meta name="generator" content="Inkery">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"HTTP Tunneling","description":"代理协议要解决的是\"怎么把目标地址交给中转方\"，HTTP 隧道要解决的是\"怎么把 TCP 塞进请求体\"。两件事拼起来，代理就能跑在不给 socket 的边缘节点上。","datePublished":"2026-10-29T16:39:39+08:00","dateModified":"2026-10-29T17:38:05+08:00","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://yumiera.github.io/posts/http-tunneling/"},"author":{"@type":"Organization","name":"Yumiera's Blog"},"publisher":{"@type":"Organization","name":"Yumiera's Blog"},"keywords":"HTTP隧道,代理协议,WebSocket,流量伪装","articleSection":["网络协议","技术拆解与分享"],"wordCount":5131},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://yumiera.github.io/"},{"@type":"ListItem","position":2,"name":"网络协议","item":"https://yumiera.github.io/categories/e7bd91e7bb9ce58d8fe8aeae/"},{"@type":"ListItem","position":3,"name":"HTTP Tunneling","item":"https://yumiera.github.io/posts/http-tunneling/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"HTTP Tunneling","description":"代理协议要解决的是\"怎么把目标地址交给中转方\"，HTTP 隧道要解决的是\"怎么把 TCP 塞进请求体\"。两件事拼起来，代理就能跑在不给 socket 的边缘节点上。","datePublished":"2026-10-29T16:39:39+08:00","dateModified":"2026-10-30T08:34:44+08:00","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://yumiera.github.io/posts/http-tunneling/"},"author":{"@type":"Organization","name":"Yumiera's Blog"},"publisher":{"@type":"Organization","name":"Yumiera's Blog"},"keywords":"HTTP隧道,代理协议,WebSocket,流量伪装","articleSection":["网络协议","技术拆解与分享"],"wordCount":5131},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://yumiera.github.io/"},{"@type":"ListItem","position":2,"name":"网络协议","item":"https://yumiera.github.io/categories/e7bd91e7bb9ce58d8fe8aeae/"},{"@type":"ListItem","position":3,"name":"HTTP Tunneling","item":"https://yumiera.github.io/posts/http-tunneling/"}]}]}</script>
 
 <link rel="alternate" hreflang="zh-CN" href="https://yumiera.github.io/posts/http-tunneling/">
 <link rel="alternate" hreflang="x-default" href="https://yumiera.github.io/posts/http-tunneling/">
@@ -174,7 +174,7 @@ html.dark{
   <p class="toc-title" id="toc-title">目录</p>
   <ul class="toc-list">
     
-      <li class="toc-item toc-level-1">
+      <li class="toc-item toc-level-2">
         <a href="#http-tcp-http" data-toc-link="http-tcp-http">HTTP 隧道：把 TCP 封装成 HTTP 双向流</a>
       </li>
     
@@ -321,7 +321,7 @@ html.dark{
       
 
       <div class="post-body">
-        <h1 id="http-tcp-http" data-src-line="0">HTTP 隧道：把 TCP 封装成 HTTP 双向流</h1>
+        <h2 id="http-tcp-http" data-src-line="0">HTTP 隧道：把 TCP 封装成 HTTP 双向流</h2>
 <blockquote data-src-line="2">
 <p data-src-line="2">HTTP 隧道不是新概念，CONNECT 已经用了二十多年。这篇讲它的完整形态：地址信封怎么设计、TCP 怎么塞进请求体、以及为什么能跑在不给 socket 的 CDN 上。</p>
 </blockquote>
@@ -691,7 +691,7 @@ HTTP body 流必须 <code>await writer.ready</code>：不等待等于放弃背�
   <p class="toc-title" id="toc-title">目录</p>
   <ul class="toc-list">
     
-      <li class="toc-item toc-level-1">
+      <li class="toc-item toc-level-2">
         <a href="#http-tcp-http" data-toc-link="http-tcp-http">HTTP 隧道：把 TCP 封装成 HTTP 双向流</a>
       </li>
     
